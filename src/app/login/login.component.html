@@ -1,14 +1,18 @@
-<div class="login-container">
-  <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">       
-    <h2 class="form-signin-heading">Please login</h2>
-    <div class="login-box-body">
-      <input type="text" class="form-control"  name="email" id="email" placeholder="Email" ngModel >
-      <input type="password" class="form-control" name="password" id="password" placeholder="Password" ngModel>      
-    
-    </div>
-    <label class="checkbox">
-      <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+<div class="signin-content">
+  <div class="grid">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <label for="login__username"><svg class="icon"></svg>   
+      <div class="form__field">
+        <input type="text" class="form-control"  name="email" id="email" placeholder="Email" ngModel >
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" ngModel>      
+      
+      </div>
     </label>
-    <button class="btn btn-success btn-sm" type="submit">Login</button>   
-  </form>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-success btn-sm" type="submit">Login</button>   
+    </form>
+  </div>
 </div>
